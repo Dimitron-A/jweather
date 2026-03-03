@@ -15,7 +15,7 @@ public class DatabaseSetup {
             System.out.println("");
             
             // Connect to network Derby database
-            EntityManager entityManager = Persistence.createEntityManagerFactory("com.mycompany_eWeather_jar_1.0-SNAPSHOTPU").createEntityManager();
+            EntityManager entityManager = Persistence.createEntityManagerFactory("com.eweather_eWeather_jar_1.0-SNAPSHOTPU").createEntityManager();
             
             System.out.println("✓ Connected to database");
             System.out.println("");

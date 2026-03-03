@@ -46,7 +46,7 @@ public class TempUtils {
 
     public void refreshWeatherForAllCities() throws Exception {
         // get all cities from database
-        EntityManager entityManager =  Persistence.createEntityManagerFactory("com.mycompany_eWeather_jar_1.0-SNAPSHOTPU").createEntityManager();
+        EntityManager entityManager =  Persistence.createEntityManagerFactory("com.eweather_eWeather_jar_1.0-SNAPSHOTPU").createEntityManager();
         Query query = entityManager.createQuery("SELECT e FROM City e");
         List<City> resultList = query.getResultList();
         
@@ -125,7 +125,7 @@ public class TempUtils {
     
     public void refreshForecastForAllCities() throws Exception {
         // get all cities from database
-        EntityManager entityManager =  Persistence.createEntityManagerFactory("com.mycompany_eWeather_jar_1.0-SNAPSHOTPU").createEntityManager();
+        EntityManager entityManager =  Persistence.createEntityManagerFactory("com.eweather_eWeather_jar_1.0-SNAPSHOTPU").createEntityManager();
         Query query = entityManager.createQuery("SELECT e FROM City e");
         List<City> resultList = query.getResultList();
         int i;

@@ -43,7 +43,7 @@ public class eWeatherFrame extends javax.swing.JFrame {
         bindingGroup = new org.jdesktop.beansbinding.BindingGroup();
 
         buttonGroup1 = new javax.swing.ButtonGroup();
-        entityManager = java.beans.Beans.isDesignTime() ? null : javax.persistence.Persistence.createEntityManagerFactory("com.mycompany_eWeather_jar_1.0-SNAPSHOTPU").createEntityManager();
+        entityManager = java.beans.Beans.isDesignTime() ? null : javax.persistence.Persistence.createEntityManagerFactory("com.eweather_eWeather_jar_1.0-SNAPSHOTPU").createEntityManager();
         if (java.beans.Beans.isDesignTime()) {
             weatherSnapshotQuery = null;
         } else {
@@ -534,7 +534,7 @@ public class eWeatherFrame extends javax.swing.JFrame {
 
         DefaultListModel listModel = new DefaultListModel();
         
-        EntityManager entityManager =  Persistence.createEntityManagerFactory("com.mycompany_eWeather_jar_1.0-SNAPSHOTPU").createEntityManager();
+        EntityManager entityManager =  Persistence.createEntityManagerFactory("com.eweather_eWeather_jar_1.0-SNAPSHOTPU").createEntityManager();
         Query query = entityManager.createQuery("SELECT e FROM City e");
         List<City> resultList = query.getResultList();
         
@@ -568,7 +568,7 @@ public class eWeatherFrame extends javax.swing.JFrame {
             error_label.setText("");
         }
         
-        EntityManager entityManager =  Persistence.createEntityManagerFactory("com.mycompany_eWeather_jar_1.0-SNAPSHOTPU").createEntityManager();
+        EntityManager entityManager =  Persistence.createEntityManagerFactory("com.eweather_eWeather_jar_1.0-SNAPSHOTPU").createEntityManager();
             
 
         Query query = entityManager.createQuery("SELECT e FROM City e");
@@ -614,7 +614,7 @@ public class eWeatherFrame extends javax.swing.JFrame {
         
         DefaultListModel listModel = new DefaultListModel();
         
-        EntityManager entityManager =  Persistence.createEntityManagerFactory("com.mycompany_eWeather_jar_1.0-SNAPSHOTPU").createEntityManager();
+        EntityManager entityManager =  Persistence.createEntityManagerFactory("com.eweather_eWeather_jar_1.0-SNAPSHOTPU").createEntityManager();
         Query query = entityManager.createQuery("SELECT e FROM City e");
         List<City> resultList = query.getResultList();
         
@@ -672,7 +672,7 @@ public class eWeatherFrame extends javax.swing.JFrame {
             error_label2.setText("");
         }
         
-        EntityManager entityManager =  Persistence.createEntityManagerFactory("com.mycompany_eWeather_jar_1.0-SNAPSHOTPU").createEntityManager();
+        EntityManager entityManager =  Persistence.createEntityManagerFactory("com.eweather_eWeather_jar_1.0-SNAPSHOTPU").createEntityManager();
             
         Object columnNames[] = { "Πόλη", "Θερμοκρασία (min)", "Θερμοκρασία (max)" };
 
@@ -707,7 +707,7 @@ public class eWeatherFrame extends javax.swing.JFrame {
 
     private void jButton13ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton13ActionPerformed
         // TODO add your handling code here:
-        EntityManager entityManager =  Persistence.createEntityManagerFactory("com.mycompany_eWeather_jar_1.0-SNAPSHOTPU").createEntityManager();
+        EntityManager entityManager =  Persistence.createEntityManagerFactory("com.eweather_eWeather_jar_1.0-SNAPSHOTPU").createEntityManager();
             
         Object columnNames[] = { "Πόλη", "Θερμοκρασία (min)", "Θερμοκρασία (max)", "Θερμοκρασία (average)" };
 
@@ -767,7 +767,7 @@ public class eWeatherFrame extends javax.swing.JFrame {
         
         DefaultListModel listModel = new DefaultListModel();
         
-        EntityManager entityManager =  Persistence.createEntityManagerFactory("com.mycompany_eWeather_jar_1.0-SNAPSHOTPU").createEntityManager();
+        EntityManager entityManager =  Persistence.createEntityManagerFactory("com.eweather_eWeather_jar_1.0-SNAPSHOTPU").createEntityManager();
         Query query = entityManager.createQuery("SELECT e FROM City e");
         List<City> resultList = query.getResultList();
         
@@ -792,7 +792,7 @@ public class eWeatherFrame extends javax.swing.JFrame {
             error_label1.setText("");
         }
         
-        EntityManager entityManager =  Persistence.createEntityManagerFactory("com.mycompany_eWeather_jar_1.0-SNAPSHOTPU").createEntityManager();
+        EntityManager entityManager =  Persistence.createEntityManagerFactory("com.eweather_eWeather_jar_1.0-SNAPSHOTPU").createEntityManager();
                     
         Query query = entityManager.createQuery("SELECT e FROM City e");
         List<City> resultList = query.getResultList();
@@ -831,7 +831,7 @@ public class eWeatherFrame extends javax.swing.JFrame {
 
         DateTimeFormatter dtf = DateTimeFormat.forPattern("yyyy/MM/dd HH:mm:ss");
 
-        EntityManager entityManager =  Persistence.createEntityManagerFactory("com.mycompany_eWeather_jar_1.0-SNAPSHOTPU").createEntityManager();
+        EntityManager entityManager =  Persistence.createEntityManagerFactory("com.eweather_eWeather_jar_1.0-SNAPSHOTPU").createEntityManager();
             
         Object columnNames[] = { "Πόλη", "Kαιρός", "Θερμοκρασία (C)", "Ταχ. Ανέμου (m/s)", "Σύννεφα (%)", "Βροχή (mm)", "Χιόνι (mm)", "Ημ.& Ώρα" };
 
